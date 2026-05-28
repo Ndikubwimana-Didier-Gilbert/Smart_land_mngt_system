@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry - Land Management System</title>
+    <link rel="icon" type="image/x-icon" href="icons/logo2.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="icons/back.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return Home</a> </li>
+            
+        </ul>
+
+        <!-- <ul class="portable-links">
+
+            <li><a href="admin_login.html">Admin Login <img src="icons/enter.png" alt="login_icon"></a> </li>
+
+        </ul> -->
+
+    </header>
+    <main style="font-family: Arial, sans-serif; margin: 20px; background-color: #f8f9fa;">
+
+
+    <h1 style="color: #006400; text-align: center;">📝 Land Data Entry Form</h1>
+    <p style="text-align: center; color: #555;">Enter new land parcel information</p>
+
+    
+
+    <hr>
+
+    <h2 style="color: #006400;">New Land Parcel Registration</h2>
+
+    <form>
+        <!-- Basic Information -->
+        <fieldset style="border: 2px solid #006400; padding: 15px; margin-bottom: 20px;">
+            <legend style="color: #006400; font-weight: bold;">1. Basic Information</legend>
+
+            <table cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td><label><strong>Parcel ID:</strong></label></td>
+                    <td><input type="text" placeholder="e.g. LP-2026-004" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Registration Date:</strong></label></td>
+                    <td><input type="date" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Land Type:</strong></label></td>
+                    <td>
+                        <select style="width: 100%; padding: 8px;">
+                            <option value="">-- Select Land Type --</option>
+                            <option>Residential</option>
+                            <option>Agricultural</option>
+                            <option>Commercial</option>
+                            <option>Industrial</option>
+                            <option>Institutional</option>
+                            <option>Public</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Location Information -->
+        <fieldset style="border: 2px solid #006400; padding: 15px; margin-bottom: 20px;">
+            <legend style="color: #006400; font-weight: bold;">2. Location Details</legend>
+
+            <table cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td><label><strong>District:</strong></label></td>
+                    <td>
+                        <select style="width: 100%; padding: 8px;">
+                            <option>Gasabo</option>
+                            <option>Kicukiro</option>
+                            <option>Nyarugenge</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><strong>Sector:</strong></label></td>
+                    <td><input type="text" placeholder="e.g. Remera" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Cell:</strong></label></td>
+                    <td><input type="text" placeholder="e.g. Rukiri" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Plot Number:</strong></label></td>
+                    <td><input type="text" placeholder="e.g. 456/A" style="width: 100%; padding: 8px;"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Measurement -->
+        <fieldset style="border: 2px solid #006400; padding: 15px; margin-bottom: 20px;">
+            <legend style="color: #006400; font-weight: bold;">3. Land Measurement</legend>
+
+            <table cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td><label><strong>Area (Square Meters):</strong></label></td>
+                    <td><input type="number" placeholder="1250" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Land Value (RWF):</strong></label></td>
+                    <td><input type="number" placeholder="45000000" style="width: 100%; padding: 8px;"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Owner Information -->
+        <fieldset style="border: 2px solid #006400; padding: 15px; margin-bottom: 20px;">
+            <legend style="color: #006400; font-weight: bold;">4. Owner Information</legend>
+
+            <table cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td><label><strong>Full Name:</strong></label></td>
+                    <td><input type="text" placeholder="Enter owner's full name" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>National ID / Passport:</strong></label></td>
+                    <td><input type="text" placeholder="1199887766554433" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Phone Number:</strong></label></td>
+                    <td><input type="tel" placeholder="+250 788 123 456" style="width: 100%; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td><label><strong>Email:</strong></label></td>
+                    <td><input type="email" placeholder="owner@example.com" style="width: 100%; padding: 8px;"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Additional Details -->
+        <fieldset style="border: 2px solid #006400; padding: 15px; margin-bottom: 20px;">
+            <legend style="color: #006400; font-weight: bold;">5. Additional Information</legend>
+
+            <table cellpadding="10" cellspacing="0" width="100%">
+                <tr>
+                    <td><label><strong>Land Use Purpose:</strong></label></td>
+                    <td>
+                        <textarea rows="3" placeholder="Describe intended use of the land..." style="width: 100%; padding: 8px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><strong>Has Title Deed?</strong></label></td>
+                    <td>
+                        <input type="radio" name="title" value="yes"> Yes &nbsp;&nbsp;
+                        <input type="radio" name="title" value="no"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><strong>Remarks / Notes:</strong></label></td>
+                    <td>
+                        <textarea rows="4" placeholder="Any special notes or conditions..." style="width: 100%; padding: 8px;"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <!-- Buttons -->
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Submit Land Record"
+                           style="background-color: #006400; color: white; padding: 12px 30px; font-size: 16px; border: none; cursor: pointer;">
+
+                    <input type="reset" value="Clear Form"
+                           style="background-color: #ccc; color: black; padding: 12px 30px; font-size: 16px; border: none; margin-left: 20px; cursor: pointer;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br><br>
+    <a href="index.html" style="color: #006400; text-decoration: none;">← Back to Home</a>
+
+    <footer style="text-align: center; margin-top: 50px; color: #666; font-size: 0.9em;">
+        <p>Land Management System | Kigali, Rwanda</p>
+    </footer>
+
+<main/>
+</body>
+
+</html>
