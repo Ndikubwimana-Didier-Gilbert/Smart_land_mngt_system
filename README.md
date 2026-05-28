@@ -1,3 +1,3 @@
-# Smart_land_mngt_system
-# Smart_land_mngt_system
-# Smart_land_mngt_system
+Names : Ndikubwimana Didier Gilbert
+Reg No : 225058410
+
