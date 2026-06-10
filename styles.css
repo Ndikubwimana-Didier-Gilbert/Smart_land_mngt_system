@@ -31,6 +31,7 @@ body{
     align-items: center;
     gap:8px;
     transition: all .2s ease-in-out;
+    /* font-weight: bold; */
 
 }
 .portable-links li a:hover{
@@ -57,10 +58,14 @@ body{
     align-items: center;
     gap:3px;
     transition: all .2s ease-in-out;
+    /* font-weight: bold; */
 
 }
 .nav-links li a:hover{
     color:olivedrab;
+}
+.nav-links li a:visited{
+    color:white;
 }
 .nav-links li a img{
     width:15px;
