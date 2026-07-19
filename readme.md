@@ -1,4 +1,4 @@
-# LandTrack — Land Management System
+# LandTrack — Smart Land Management System (SLMS)
 
 **Made with**
  — HTML, CSS, and JavaScript,JSON and Ajax only (no backend, no database server)
