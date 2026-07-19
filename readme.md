@@ -4,7 +4,7 @@
  — HTML, CSS, and JavaScript,JSON and Ajax only (no backend, no database server)
 
 ---
-**Deployed Version** : [https://slms-rw.netlify.app]
+**Deployed Version** : [https://ndikubwimana-didier-gilbert.github.io/Smart_land_mngt_system/]
 
 
 ## 1. What the project does
