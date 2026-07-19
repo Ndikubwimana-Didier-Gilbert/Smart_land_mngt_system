@@ -1,7 +1,7 @@
 # LandTrack — Land Management System
 
-**Project report**
-Year 1 college project — HTML, CSS, and JavaScript only (no backend, no database server)
+**Made with**
+ — HTML, CSS, and JavaScript,JSON and Ajax only (no backend, no database server)
 
 ---
 
