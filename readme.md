@@ -187,7 +187,3 @@ These limitations exist because the assignment specifically requires a frontend-
 
 ---
 
-## 10. Bugs found and fixed while testing
-
-- **Missing colors/borders on the admin login page.** The color variables (`--navy`, `--green`, `--border`, etc.) were originally only defined inside `css/navbar.css`. Pages that don't use the navbar — like `admin/login.html` — never loaded those variables, so the submit button and input borders silently disappeared. Fixed by moving the variable definitions into `css/style.css`, which every single page includes.
-- **Clicking the "LandTrack Admin" logo logged the admin out.** The function that carries the logged-in admin's info between pages (`protectAdminPage()` in `js/admin-common.js`) only rewrote links with the `admin-nav__link` class. The logo link used a different class and was missed, so clicking it dropped the login info from the URL and bounced back to the login page. Fixed by including that link in the same rewrite step.
