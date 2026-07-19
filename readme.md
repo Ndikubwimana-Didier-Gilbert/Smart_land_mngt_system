@@ -172,7 +172,7 @@ Because `js/db.js` uses AJAX (`XMLHttpRequest`) to load local JSON files, some b
 python3 -m http.server
 ```
 
-then open `http://localhost:8000` in the browser. Alternatively, use a "Live Server" style extension in your code editor.
+then open `http://localhost:8000` in the browser. Alternatively, use a "Live Server" style extension in your code editor.`Note-that: running the project locally without using web server will cause the json fetching not work as the browser will block that for security reasons`
 
 ---
 
