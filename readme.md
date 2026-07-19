@@ -10,7 +10,7 @@
 LandTrack lets a land owner submit an application to register a parcel of land, and lets an administrator review, approve, or reject that application. It is split into two parts:
 
 - **Public zone** — no login required. Anyone can submit an application or check its status.
-- **Admin zone** — login required. Staff manage owners, locations, parcels, and applications.
+- **Admin zone** — login required(`use these credentials for testing purposes on login page and click login to view admin zone webpages: username=>admin,password=>admin123`). Staff manage owners, locations, parcels, and applications.
 
 This mirrors how a real land registry works: the public interacts with the front desk (submitting requests), while staff behind the scenes manage the actual records.
 
