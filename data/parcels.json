@@ -1,0 +1,14 @@
+[
+  {
+    "parcel_id": "PARCEL-1000",
+    "owner_id": "OWN-1000",
+    "location_id": "LOC-1000",
+    "admin_id": null,
+    "reg_date": "2026-01-15",
+    "value": 25000000,
+    "area_sqm": 600,
+    "land_type": "residential",
+    "title_deed": "TD-2026-001",
+    "remarks": "Corner plot"
+  }
+]

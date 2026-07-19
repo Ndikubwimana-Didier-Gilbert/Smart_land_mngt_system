@@ -1,0 +1,74 @@
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background-color: white;
+}
+
+.admin-header p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.logout-link {
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 1.5rem;
+  background-color: #f4f7f6;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-nav__link {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.admin-nav__link:hover {
+  background-color: var(--border);
+}
+
+.admin-nav__link.active {
+  background-color: var(--navy);
+  color: white;
+}
+
+.admin-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.admin-main h1 {
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+
+.admin-stats .stat-box h2 {
+  color: white;
+}
+
+/* Responsive: stack the admin nav and header on small screens */
+@media (max-width: 600px) {
+  .admin-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .admin-nav {
+    justify-content: center;
+  }
+}

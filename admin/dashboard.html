@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - LandTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/forms.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <a href="dashboard.html" class="navbar__brand">
+    <span class="navbar__mark" aria-hidden="true"></span>
+    LandTrack Admin
+  </a>
+  <p id="welcomeMessage"></p>
+  <a href="login.html" class="logout-link">Log out</a>
+</header>
+
+<nav class="admin-nav">
+  <a href="dashboard.html" class="admin-nav__link active">Dashboard</a>
+  <a href="owners.html" class="admin-nav__link">Owners</a>
+  <a href="locations.html" class="admin-nav__link">Locations</a>
+  <a href="parcels.html" class="admin-nav__link">Parcels</a>
+  <a href="applications.html" class="admin-nav__link">Applications</a>
+  <a href="admins.html" class="admin-nav__link">Admins</a>
+</nav>
+
+<main class="admin-main">
+  <h1>Dashboard</h1>
+  <p>Quick overview of the current data.</p>
+
+  <div class="stats admin-stats">
+    <div class="stat-box">
+      <h2 id="totalParcels">0</h2>
+      <p>Total Parcels</p>
+    </div>
+    <div class="stat-box">
+      <h2 id="totalOwners">0</h2>
+      <p>Total Owners</p>
+    </div>
+    <div class="stat-box">
+      <h2 id="pendingApplications">0</h2>
+      <p>Pending Applications</p>
+    </div>
+    <div class="stat-box">
+      <h2 id="approvedApplications">0</h2>
+      <p>Approved Applications</p>
+    </div>
+  </div>
+</main>
+
+<script src="../js/db.js"></script>
+<script src="../js/admin-common.js"></script>
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

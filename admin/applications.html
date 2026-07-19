@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Applications - LandTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/forms.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="../css/tables.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <a href="dashboard.html" class="navbar__brand">
+    <span class="navbar__mark" aria-hidden="true"></span>
+    LandTrack Admin
+  </a>
+  <p id="welcomeMessage"></p>
+  <a href="login.html" class="logout-link">Log out</a>
+</header>
+
+<nav class="admin-nav">
+  <a href="dashboard.html" class="admin-nav__link">Dashboard</a>
+  <a href="owners.html" class="admin-nav__link">Owners</a>
+  <a href="locations.html" class="admin-nav__link">Locations</a>
+  <a href="parcels.html" class="admin-nav__link">Parcels</a>
+  <a href="applications.html" class="admin-nav__link active">Applications</a>
+  <a href="admins.html" class="admin-nav__link">Admins</a>
+</nav>
+
+<main class="admin-main">
+  <h1>Manage Applications</h1>
+  <p>Review applications submitted by the public and update their status.</p>
+
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Application ID</th>
+          <th>Parcel</th>
+          <th>Submitted On</th>
+          <th>Processed By</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="applicationsTableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<script src="../js/db.js"></script>
+<script src="../js/admin-common.js"></script>
+<script src="../js/applications.js"></script>
+</body>
+</html>

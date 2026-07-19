@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Application - LandTrack</title>
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="navbar__brand">
+      <span class="navbar__mark" aria-hidden="true"></span>
+      LandTrack
+    </a>
+
+    <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+    </button>
+
+    <div class="navbar__menu" id="navMenu">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="apply.html" class="navbar__link">Apply for registration</a>
+      <a href="track.html" class="navbar__link active">Track application</a>
+      <a href="index.html#about" class="navbar__link">About</a>
+      <a href="admin/login.html" class="navbar__link navbar__link--admin">Admin login</a>
+    </div>
+  </nav>
+</header>
+
+<main class="form-page">
+  <h1>Track Your Application</h1>
+  <p>Enter the application ID you received after submitting your application.</p>
+
+  <form id="trackForm">
+    <div class="form-section">
+      <div class="form-group">
+        <label for="appIdInput">Application ID</label>
+        <input type="text" id="appIdInput" placeholder="e.g. APP-1000" required>
+      </div>
+      <button type="submit" class="submit-btn">Check Status</button>
+    </div>
+  </form>
+
+  <div class="result-box" id="resultBox"></div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 LandTrack.</p>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/db.js"></script>
+<script src="js/track.js"></script>
+</body>
+</html>

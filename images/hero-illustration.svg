@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Parcel boundary -->
+  <rect x="30" y="50" width="340" height="210" rx="12" fill="none" stroke="#1e3a5f" stroke-width="3" stroke-dasharray="10 7"/>
+
+  <!-- House -->
+  <g transform="translate(140,110)">
+    <polygon points="0,45 55,0 110,45" fill="#1e3a5f"/>
+    <rect x="10" y="45" width="90" height="65" fill="#2f855a"/>
+    <rect x="45" y="80" width="20" height="30" fill="#ffffff"/>
+    <rect x="20" y="60" width="18" height="18" fill="#ffffff"/>
+    <rect x="72" y="60" width="18" height="18" fill="#ffffff"/>
+  </g>
+
+  <!-- Location pin -->
+  <g transform="translate(270,70)">
+    <path d="M22 0 C34 0 44 10 44 22 C44 38 22 66 22 66 C22 66 0 38 0 22 C0 10 10 0 22 0 Z" fill="#2f855a"/>
+    <circle cx="22" cy="22" r="9" fill="#ffffff"/>
+  </g>
+
+  <!-- Small plot marker bottom left -->
+  <g transform="translate(55,190)">
+    <circle cx="10" cy="10" r="10" fill="#1e3a5f"/>
+    <circle cx="10" cy="10" r="3" fill="#ffffff"/>
+  </g>
+</svg>

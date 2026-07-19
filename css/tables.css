@@ -1,0 +1,44 @@
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.data-table th {
+  background-color: #f4f7f6;
+  color: var(--navy);
+}
+
+.delete-btn {
+  background-color: #f8d7d7;
+  color: #a12727;
+  border: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background-color: #f2b8b8;
+}
+
+.status-select {
+  padding: 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+}

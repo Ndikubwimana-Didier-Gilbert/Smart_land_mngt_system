@@ -1,0 +1,8 @@
+[
+  {
+    "admin_id": "ADM-1000",
+    "user_name": "admin",
+    "password_hash": "admin123",
+    "role": "super_admin"
+  }
+]

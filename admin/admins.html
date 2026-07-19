@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Admins - LandTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/forms.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="../css/tables.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <a href="dashboard.html" class="navbar__brand">
+    <span class="navbar__mark" aria-hidden="true"></span>
+    LandTrack Admin
+  </a>
+  <p id="welcomeMessage"></p>
+  <a href="login.html" class="logout-link">Log out</a>
+</header>
+
+<nav class="admin-nav">
+  <a href="dashboard.html" class="admin-nav__link">Dashboard</a>
+  <a href="owners.html" class="admin-nav__link">Owners</a>
+  <a href="locations.html" class="admin-nav__link">Locations</a>
+  <a href="parcels.html" class="admin-nav__link">Parcels</a>
+  <a href="applications.html" class="admin-nav__link">Applications</a>
+  <a href="admins.html" class="admin-nav__link active">Admins</a>
+</nav>
+
+<main class="admin-main">
+  <h1>Manage Admins</h1>
+  <p>Add new administrator accounts that can log in to this dashboard.</p>
+
+  <div class="form-section">
+    <h2>Add Admin</h2>
+    <form id="addAdminForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="newUsername">Username</label>
+          <input type="text" id="newUsername" required>
+        </div>
+        <div class="form-group">
+          <label for="newPassword">Password</label>
+          <input type="text" id="newPassword" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="newRole">Role</label>
+        <select id="newRole" required>
+          <option value="admin">Admin</option>
+          <option value="super_admin">Super Admin</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn">Add Admin</button>
+    </form>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Admin ID</th>
+          <th>Username</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="adminsTableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<script src="../js/db.js"></script>
+<script src="../js/admin-common.js"></script>
+<script src="../js/admins.js"></script>
+</body>
+</html>

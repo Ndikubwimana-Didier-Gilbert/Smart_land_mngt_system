@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply for Registration - LandTrack</title>
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="navbar__brand">
+      <span class="navbar__mark" aria-hidden="true"></span>
+      LandTrack
+    </a>
+
+    <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+      <span class="navbar__toggle-bar"></span>
+    </button>
+
+    <div class="navbar__menu" id="navMenu">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="apply.html" class="navbar__link active">Apply for registration</a>
+      <a href="track.html" class="navbar__link">Track application</a>
+      <a href="index.html#about" class="navbar__link">About</a>
+      <a href="admin/login.html" class="navbar__link navbar__link--admin">Admin login</a>
+    </div>
+  </nav>
+</header>
+
+<main class="form-page">
+  <h1>Apply for Land Registration</h1>
+  <p>Fill in your details below. You will receive an application ID to track your status.</p>
+
+  <form id="applicationForm">
+
+    <div class="form-section">
+      <h2>Owner Details</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="nationalId">National ID or Passport Number</label>
+        <input type="text" id="nationalId" required>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Location Details</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="district">District</label>
+          <input type="text" id="district" required>
+        </div>
+        <div class="form-group">
+          <label for="cell">Cell</label>
+          <input type="text" id="cell" required>
+        </div>
+        <div class="form-group">
+          <label for="plotNumber">Plot Number</label>
+          <input type="text" id="plotNumber" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Parcel Details</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="areaSqm">Area (square meters)</label>
+          <input type="number" id="areaSqm" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="value">Estimated Value</label>
+          <input type="number" id="value" min="0" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="landType">Land Type</label>
+        <select id="landType" required>
+          <option value="">-- Select land type --</option>
+          <option value="residential">Residential</option>
+          <option value="agricultural">Agricultural</option>
+          <option value="commercial">Commercial</option>
+          <option value="industrial">Industrial</option>
+          <option value="institutional">Institutional</option>
+          <option value="public">Public</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="titleDeed">Title Deed Number (if available)</label>
+        <input type="text" id="titleDeed">
+      </div>
+
+      <div class="form-group">
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks" rows="3"></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Application</button>
+  </form>
+
+  <div class="confirmation-box" id="confirmationBox">
+    <h2>Application Submitted!</h2>
+    <p>Your application has been received. Keep this ID to track your status:</p>
+    <div class="app-id" id="generatedAppId"></div>
+    <p><a href="track.html">Go to Track Application page</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 LandTrack.</p>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/db.js"></script>
+<script src="js/apply.js"></script>
+</body>
+</html>

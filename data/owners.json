@@ -1,0 +1,10 @@
+[
+  {
+    "owner_id": "OWN-1000",
+    "first_name": "Jean",
+    "last_name": "Uwimana",
+    "email": "jean.uwimana@example.com",
+    "phone": "0788123456",
+    "national_id_or_passport": "1199012345678901"
+  }
+]

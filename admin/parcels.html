@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Parcels - LandTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/forms.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="../css/tables.css">
+</head>
+<body>
+
+<header class="admin-header">
+  <a href="dashboard.html" class="navbar__brand">
+    <span class="navbar__mark" aria-hidden="true"></span>
+    LandTrack Admin
+  </a>
+  <p id="welcomeMessage"></p>
+  <a href="login.html" class="logout-link">Log out</a>
+</header>
+
+<nav class="admin-nav">
+  <a href="dashboard.html" class="admin-nav__link">Dashboard</a>
+  <a href="owners.html" class="admin-nav__link">Owners</a>
+  <a href="locations.html" class="admin-nav__link">Locations</a>
+  <a href="parcels.html" class="admin-nav__link active">Parcels</a>
+  <a href="applications.html" class="admin-nav__link">Applications</a>
+  <a href="admins.html" class="admin-nav__link">Admins</a>
+</nav>
+
+<main class="admin-main">
+  <h1>Manage Parcels</h1>
+  <p>Register a parcel by linking it to an existing owner and location.</p>
+
+  <div class="form-section">
+    <h2>Add Parcel</h2>
+    <form id="addParcelForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ownerSelect">Owner</label>
+          <select id="ownerSelect" required>
+            <option value="">-- Select owner --</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="locationSelect">Location</label>
+          <select id="locationSelect" required>
+            <option value="">-- Select location --</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="areaSqm">Area (square meters)</label>
+          <input type="number" id="areaSqm" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="value">Estimated Value</label>
+          <input type="number" id="value" min="0" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="landType">Land Type</label>
+        <select id="landType" required>
+          <option value="">-- Select land type --</option>
+          <option value="residential">Residential</option>
+          <option value="agricultural">Agricultural</option>
+          <option value="commercial">Commercial</option>
+          <option value="industrial">Industrial</option>
+          <option value="institutional">Institutional</option>
+          <option value="public">Public</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="titleDeed">Title Deed Number</label>
+        <input type="text" id="titleDeed">
+      </div>
+
+      <div class="form-group">
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks" rows="2"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Add Parcel</button>
+    </form>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Parcel ID</th>
+          <th>Owner</th>
+          <th>Location</th>
+          <th>Land Type</th>
+          <th>Area (sqm)</th>
+          <th>Value</th>
+          <th>Reg. Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="parcelsTableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<script src="../js/db.js"></script>
+<script src="../js/admin-common.js"></script>
+<script src="../js/parcels.js"></script>
+</body>
+</html>

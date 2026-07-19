@@ -1,0 +1,236 @@
+/* ============================================
+   Design tokens for LandTrack
+   Defined here (not just navbar.css) so every page that
+   includes style.css has access to these colors, even
+   pages like admin/login.html that don't use the navbar.
+   ============================================ */
+:root {
+  --navy: #1e3a5f;
+  --navy-dark: #14283f;
+  --green: #2f855a;
+  --green-dark: #24684a;
+  --text: #2d3436;
+  --text-muted: #5a6470;
+  --border: #e2e5e9;
+  --bg: #ffffff;
+}
+
+/* ============================================
+   General page styles
+   ============================================ */
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  color: var(--navy);
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  text-align: left;
+  padding: 4rem 1.5rem;
+  background-color: #f4f7f6;
+}
+
+.hero-text {
+  max-width: 480px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+/* ============================================
+   How It Works Section
+   ============================================ */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.step {
+  background-color: #f9f9f9;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  width: 220px;
+  text-align: center;
+}
+
+.step h3 {
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   Features Section
+   ============================================ */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.8rem;
+}
+
+.feature-card h3 {
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   Stats Section
+   ============================================ */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  background-color: var(--navy);
+  border-radius: 6px;
+  padding: 2.5rem 1.5rem;
+}
+
+.stat-box {
+  text-align: center;
+  color: white;
+}
+
+.stat-box h2 {
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.stat-box p {
+  color: #d7e0e8;
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+.about {
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   Responsive: tablet and mobile
+   ============================================ */
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .stats {
+    gap: 1.5rem;
+  }
+}
